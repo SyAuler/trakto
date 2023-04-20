@@ -1,0 +1,20 @@
+
+.header-wrapper {
+    height: 76px;
+
+    &-logo {
+        padding: 1rem 4em;
+    }
+
+    &-item {
+        color: #fff;
+    }
+}
+
+.dark {
+    background-color: #252323;
+}
+
+.light {
+    background-color: #FFFFFF;
+}

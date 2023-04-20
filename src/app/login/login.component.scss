@@ -1,0 +1,39 @@
+
+.login-wrapper {
+    height: 100vh;
+    background-color: #EFF2F9;
+
+    &-content {
+    text-align: center;
+    }
+
+    &-text {
+        //text-align: center;
+        font-size: 20px;
+    }
+}
+
+h2 {
+    font-size: 0.9rem;
+}
+
+img {
+    width: 8em;
+}
+
+input,
+button {
+    width: 300px;
+    height: 48px;
+    border-radius: 4px;
+}
+
+.btn {    
+    background-color: #1DC763;
+    color: #fff;
+}
+
+.btn:active {
+    background-color: #1dbc5f;
+    color: #fff;
+}
