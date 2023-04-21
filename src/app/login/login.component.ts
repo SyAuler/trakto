@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
         }
         this.loadingSubmit = true;
         const { email, password } = this.loginForm.value;
-        this.authService.authenticate(email, password).subscribe(
+        this.authService.login(email, password).subscribe(
             () => {
                 this.loadingSubmit = false;
             },

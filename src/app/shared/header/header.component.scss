@@ -1,20 +1,28 @@
 
 .header-wrapper {
-    height: 76px;
-
-    &-logo {
-        padding: 1rem 4em;
+    &-dark {
+        height: 76px;
+        background-color: #252323;
+    
+        &-logo {
+            padding: 1rem 4em;
+        }
+    
+        &-item {
+            color: #fff;
+        }
     }
 
-    &-item {
-        color: #fff;
+    &-light {
+        height: 76px;
+        background-color: #FFFFFF;
+    
+        &-logo {
+            padding: 1rem 4em;
+        }
+    
+        &-item {
+            color: #252323;
+        }
     }
-}
-
-.dark {
-    background-color: #252323;
-}
-
-.light {
-    background-color: #FFFFFF;
 }

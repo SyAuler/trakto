@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+@font-face {
+    font-family: 'Funky Monkey';
+    src: url('../../assets/font/funky-monkey.ttf');
+}
+
+.container {
+    padding-bottom: 4em;
+}
+
+.courseware-wrapper {
+    min-height: calc(100vh - 76px);
+    background-color: #EFF2F9;
+
+    &-banner {
+        position: relative;
+        height: 45vh;
+        background: linear-gradient(180deg, #16984C 0%, #16B357 100%),
+            radial-gradient(109.13% 109.13% at 77.27% -19.92%, rgba(85, 125, 230, 0.261) 0%, rgba(2, 39, 66, 0) 69.98%),
+            radial-gradient(51.99% 51.99% at 64.17% 37.22%, rgba(85, 230, 186, 0.639) 0%, rgba(193, 229, 255, 0) 68.67%),
+            radial-gradient(46.04% 46.04% at 26.85% 43.18%, rgba(255, 230, 0, 0.5) 0%, rgba(103, 191, 255, 0) 69.98%);
+    }
+
+    &-content {
+        height: 30vh;
+        background-color: #FFF;
+    }
+
+    &-name {
+        color: #FFC13D;
+        font-family: 'Funky Monkey', cursive;
+        transform: rotate(-8.42deg);
+        font-weight: 400;
+        font-size: 3em;
+        position: absolute;
+        bottom: 2em;
+        right: 7em;
+    }
+
+    &-arrow {
+        position: absolute;
+        transform: rotate(-8.98deg);
+        right: 22em;
+        bottom: 3em;
+
+        img {
+            width: 4em;
+        }
+    }
+
+    &-arrow-line {
+        position: absolute;
+        width: 6.3em;
+        right: 3.5em;
+        bottom: 0;
+    }
+
+    &-photo {
+        position: absolute;
+        width: 18em;
+        right: 4em;
+        bottom: 0;
+    }
+
+    &-title {
+        color: #fff;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3em;
+        line-height: 130%;
+        letter-spacing: 0.1rem;
+        white-space: nowrap;
+        margin-left: 8rem;
+    }
+
+    &-text {
+        color: #fff;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 38px;
+        margin-left: 8rem;
+    }
+}

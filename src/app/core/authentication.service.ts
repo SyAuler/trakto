@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { concatMap, Observable, of } from 'rxjs';
+import { concatMap, map, Observable, of } from 'rxjs';
 import { TraktoService } from './trakto.service';
 
 @Injectable({
@@ -8,12 +8,14 @@ import { TraktoService } from './trakto.service';
 })
 export class AuthenticationService {
 
+    private isAuthenticated = false;
+
     constructor(
         private traktoService: TraktoService,
         private router: Router,
     ) { }
-
-    authenticate(email: string, password: string): Observable<any> {
+    
+    login(email: string, password: string): Observable<any> {
         return this.traktoService
             .post('auth/signin', {
                 email,
@@ -21,17 +23,31 @@ export class AuthenticationService {
             })
             .pipe(
                 concatMap((res) => {
-                    if (res.multi_factor) {
-                        this.router.navigate(['/login'], {
-                            queryParams: { token: res.token },
-                        });
-                        return of();
-                    }
+                    this.isAuthenticated = true;
                     this.router.navigate(['/home']);
                     localStorage.setItem('token', JSON.stringify(res));
-                    return res;
+                    //this.setAuthenticationToken(res.token);
+                    return res.can_authenticate;
                 })
             );
+    }
+
+    private setAuthenticationToken(token: string): Observable<any> {
+		return this.traktoService.post('user/by_token/', { token }).pipe(
+			map((res) => {
+				this.router.navigate(['/']);
+				localStorage.setItem('token', JSON.stringify(token));
+			})
+		);
+	}
+
+    logout(): void {
+        this.isAuthenticated = false;
+        this.router.navigateByUrl('/login');
+    }
+
+    getIsAuthenticated(): boolean {
+        return this.isAuthenticated;
     }
 
 }

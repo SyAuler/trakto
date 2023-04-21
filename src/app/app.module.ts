@@ -10,6 +10,9 @@ import { LoginModule } from './login/login.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { CoursewareModule } from './courseware/courseware.module';
+import { AuthGuard } from './core/auth.guard';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
     declarations: [
@@ -23,12 +26,16 @@ import { HeaderComponent } from './shared/header/header.component';
         AppRoutingModule,
         HttpClientModule,
         BrowserAnimationsModule,
-        LoginModule,
         FormsModule,
         ReactiveFormsModule,
+        SharedModule,
+        LoginModule,
+        CoursewareModule,
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    providers: [],
+    providers: [
+        AuthGuard,
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
