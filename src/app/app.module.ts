@@ -2,7 +2,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
@@ -13,6 +13,9 @@ import { HeaderComponent } from './shared/header/header.component';
 import { CoursewareModule } from './courseware/courseware.module';
 import { AuthGuard } from './core/auth.guard';
 import { SharedModule } from './shared/shared.module';
+import { AuthInterceptor } from './core/auth.interceptor';
+import { AuthService } from './core/auth.service';
+import { TraktoService } from './core/trakto.service';
 
 @NgModule({
     declarations: [
@@ -34,7 +37,14 @@ import { SharedModule } from './shared/shared.module';
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
     providers: [
+        TraktoService,
         AuthGuard,
+        AuthService,
+        {
+            provide: HTTP_INTERCEPTORS,
+            useClass: AuthInterceptor,
+            multi: true
+        },
     ],
     bootstrap: [AppComponent]
 })

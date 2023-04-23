@@ -13,12 +13,12 @@ export class TraktoService {
     private headers!: HttpHeaders;
 
     constructor(
-        private httpClient: HttpClient
+        private httpClient: HttpClient,
     ) { }
 
     public get(endpoint: string, id: number | null, params: any = null): Observable<any> {
         const url = `${API_URL}${endpoint}${id ? `${id}/` : ''}`;
-        return this.httpClient.get(url, { params: params });
+        return this.httpClient.get(url, { params });
     }
 
     public post(endpoint: string, data: any, options?: any): Observable<any> {

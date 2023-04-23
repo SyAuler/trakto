@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthenticationService } from 'src/app/core/authentication.service';
+import { AuthService } from 'src/app/core/auth.service';
 
 @Component({
     selector: 'app-header',
@@ -13,7 +13,7 @@ export class HeaderComponent {
     date: Date = new Date;
 
     constructor(
-        private authService: AuthenticationService,
+        private authService: AuthService,
         private router: Router
     ) {}
 
