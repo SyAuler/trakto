@@ -23,7 +23,7 @@ const routes: Routes = [
     { 
         path: 'courseware',
         component: CoursewareComponent,
-        canActivate: [AuthGuard],
+        //canActivate: [AuthGuard],
     },
     
 ];

@@ -9,6 +9,27 @@
     padding-bottom: 4em;
 }
 
+.card {
+    height: 10em;
+    text-decoration: none;
+    border: none !important;
+
+    &-body {
+        padding: 0.5em 0;
+    }
+
+    &-title {
+        font-size: 0.75em;
+        font-weight: 500;
+        color: #354564;
+    }
+}
+
+.carousel-control-next, .carousel-control-prev {
+    background: rgba(53, 69, 100, .2);
+    width: 5%;
+}
+
 .courseware-wrapper {
     min-height: calc(100vh - 76px);
     background-color: #EFF2F9;
@@ -23,8 +44,59 @@
     }
 
     &-content {
-        height: 30vh;
+        height: 35vh;
         background-color: #FFF;
+
+        &-week {
+            margin: 0 2.5em;
+            width: 12em;
+            background: #E4EBFB;
+            border-radius: 500px;
+            font-weight: 500;
+            font-size: 0.75em;
+            line-height: 19px;
+            color: #7183A6;
+        }
+
+        &-text {
+            padding: 0 0.5em;
+        }
+    }
+
+    &-section {
+        &-text {
+            padding: 0 2em;
+
+            h4 {
+                color: #354564;
+                font-weight: 700;
+                font-size: 1.5em;
+                line-height: 28px;
+            }
+
+            p {
+                color: #7183A6;
+                font-weight: 400;
+                font-size: 0.75em;
+                line-height: 19px;
+            }
+        }
+
+        &-content {
+            width: 18%;
+            margin: 0.5em;
+            padding: 0;
+
+            h6 {
+                font-size: 0.75rem;
+                font-weight: 700;
+            }
+
+            img {
+                width: 12em;
+                height: 7em;
+            }
+        }
     }
 
     &-name {
@@ -66,7 +138,6 @@
     &-title {
         color: #fff;
         font-family: 'Poppins';
-        font-style: normal;
         font-weight: 700;
         font-size: 3em;
         line-height: 130%;
@@ -77,8 +148,6 @@
 
     &-text {
         color: #fff;
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 400;
         font-size: 1.5em;
         line-height: 38px;
