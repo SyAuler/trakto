@@ -2,10 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { CoursewareService } from './courseware.service';
 import * as bootstrap from 'bootstrap/';
 
-export interface Data {
-    name: string
-    img: string
-}
 @Component({
     selector: 'app-courseware',
     templateUrl: './courseware.component.html',
@@ -16,6 +12,8 @@ export class CoursewareComponent implements OnInit {
     listAllDesigns!: Array<any>;
     slides: any = [];
     itemsPerSlide = 5;
+    showAll!: boolean;
+    linkEditor!: string;
 
     constructor(
         private coursewareService: CoursewareService,
@@ -26,20 +24,27 @@ export class CoursewareComponent implements OnInit {
     }
 
     ngAfterViewInit() {
-        const carouselElement = document.querySelector('#carousel') || document.querySelector('#carouselVideoLessons') || '';
-        const carousel = new bootstrap.Carousel(carouselElement);
+        new bootstrap.Carousel(
+            document.querySelector('#carousel') 
+            || document.querySelector('#carouselVideoLessons') 
+            || ''
+        );
+    }
+
+    getEditor(id: string) {
+        return this.linkEditor = 'https://editor.trakto.io/presentation/p/'+id
     }
 
     getListAllDesigns() {
         const params = {
-            total_per_page: '5',
-            order_by: 'title',
+            nextCursor: '',
+            total_per_page: '',
+            order_by: 'created_at',
             order_orientation: 'desc'
         }
         this.coursewareService.getListAllDesigns(params).subscribe(
             res => {
-                const response = { status: 200, data: res };
-                this.listAllDesigns = response.data as any[];
+                this.listAllDesigns = res.data;
                 this.createSlides(this.listAllDesigns);
             }
         )

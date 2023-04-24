@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CoursewareRoutingModule } from './courseware-routing.module';
 import { CoursewareComponent } from './courseware.component';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -11,8 +12,9 @@ import { RouterModule } from '@angular/router';
     ],
     imports: [
         CommonModule,
-		RouterModule,
+        RouterModule,
         CoursewareRoutingModule,
+        SharedModule,
     ],    
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

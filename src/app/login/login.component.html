@@ -1,7 +1,7 @@
 <div class="login-wrapper d-flex flex-column justify-content-center align-items-center">
     <form [formGroup]="loginForm">
         <div class="row mb-3 d-flex align-items-center">
-            <div class="mb-3">
+            <div class="mb-5">
                 <img src="../../assets/img/logo-trakto.svg" alt="">
             </div>
             <div class="mb-3">
@@ -16,7 +16,7 @@
             <label for="password" class="form-label">Senha:</label>
             <input type="password" class="form-control" id="password" formControlName="password">
         </div>
-        <div class="mb-3">
+        <div class="my-4">
             <button type="submit" class="btn" (click)="login()">
                 <span>
                     <span class="d-flex justify-content-center align-items-center" *ngIf="!loadingSubmit">Entrar</span>

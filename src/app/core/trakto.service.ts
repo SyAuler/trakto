@@ -4,7 +4,6 @@ import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 
 const API_URL = environment.backendUrl
-
 @Injectable({
     providedIn: 'root'
 })
@@ -24,5 +23,4 @@ export class TraktoService {
     public post(endpoint: string, data: any, options?: any): Observable<any> {
         return this.httpClient.post(API_URL + endpoint, data, { headers: this.headers, ...options });
     }
-
 }

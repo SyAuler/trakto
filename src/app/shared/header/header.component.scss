@@ -1,28 +1,53 @@
-
 .header-wrapper {
     &-dark {
         height: 76px;
         background-color: #252323;
-    
+
         &-logo {
             padding: 1rem 4em;
         }
-    
+
         &-item {
             color: #fff;
+        }
+
+        .divider-vertical {
+            height: 2rem;
+            margin: .5rem 0;
+            border: none;
+            border-right: 1px solid rgb(228, 235, 251, 0.3);
+            transform: rotate(180deg);
         }
     }
 
     &-light {
         height: 76px;
         background-color: #FFFFFF;
-    
+
         &-logo {
             padding: 1rem 4em;
         }
-    
+
         &-item {
             color: #252323;
         }
+
+        .divider-vertical {
+            height: 2rem;
+            margin: .5rem 0;
+            border: none;
+            border-right: 1px solid rgb(113, 131, 166, 0.3);
+            transform: rotate(180deg);
+        }
     }
+}
+
+button {
+    color: #7183A6;
+    border-color: #7183A6;
+}
+
+button:hover {
+    background-color: #7183A6;
+    border-color: #7183A6;
 }

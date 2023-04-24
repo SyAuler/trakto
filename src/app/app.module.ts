@@ -9,7 +9,6 @@ import { CommonModule } from '@angular/common';
 import { LoginModule } from './login/login.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './shared/header/header.component';
 import { CoursewareModule } from './courseware/courseware.module';
 import { AuthGuard } from './core/auth.guard';
 import { SharedModule } from './shared/shared.module';
@@ -21,7 +20,6 @@ import { TraktoService } from './core/trakto.service';
     declarations: [
         AppComponent,
         HomeComponent,
-        HeaderComponent,
     ],
     imports: [
         BrowserModule,

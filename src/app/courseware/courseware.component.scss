@@ -6,6 +6,7 @@
 }
 
 .container {
+    padding-top: 2em;
     padding-bottom: 4em;
 }
 
@@ -25,9 +26,30 @@
     }
 }
 
-.carousel-control-next, .carousel-control-prev {
-    background: rgba(53, 69, 100, .2);
-    width: 5%;
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    background: rgba(53, 69, 100, .3);
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    top: 2em;
+    align-items: center;
+}
+
+.visually-hidden {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card-img-top {
+    height: 110px;
+    max-height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .courseware-wrapper {
@@ -37,19 +59,22 @@
     &-banner {
         position: relative;
         height: 45vh;
-        background: linear-gradient(180deg, #16984C 0%, #16B357 100%),
+        background-image: url(../../assets/img/bakground-icons.svg), 
+            linear-gradient(180deg, #16984C 0%, #16B357 100%),
             radial-gradient(109.13% 109.13% at 77.27% -19.92%, rgba(85, 125, 230, 0.261) 0%, rgba(2, 39, 66, 0) 69.98%),
             radial-gradient(51.99% 51.99% at 64.17% 37.22%, rgba(85, 230, 186, 0.639) 0%, rgba(193, 229, 255, 0) 68.67%),
             radial-gradient(46.04% 46.04% at 26.85% 43.18%, rgba(255, 230, 0, 0.5) 0%, rgba(103, 191, 255, 0) 69.98%);
     }
 
     &-content {
-        height: 35vh;
+        min-height: 35vh;
         background-color: #FFF;
+        border-radius: 8px;
 
         &-week {
-            margin: 0 2.5em;
+            margin: 0 0.5em 0 2.5em;
             width: 12em;
+            height: 20px;
             background: #E4EBFB;
             border-radius: 500px;
             font-weight: 500;
@@ -58,8 +83,18 @@
             color: #7183A6;
         }
 
+        &-chevron {
+            height: 20px;
+        }
+
         &-text {
             padding: 0 0.5em;
+        }
+
+        svg {
+            border-radius: 50%;
+            //color: #0053f3;
+            //color: #7183A6;
         }
     }
 
