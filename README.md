@@ -1,27 +1,104 @@
-# Trakto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+# Desafio Frontend Trakto
+https://github.com/trakto/desafio_frontend
 
-## Development server
+![Badge Concluído](http://img.shields.io/static/v1?label=STATUS&message=Concluído&color=GREEN&style=for-the-badge)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=STATUS&message=Concluído&color=GREEN&style=for-the-badge"/>
+</p>
 
-## Code scaffolding
+## Descrição
+Participei do desafio para frontend proposto pela Trakto. Desenvolvi um site simples com página de login, uma página inicial para acessar os conteúdos e a uma página de material didático que lista os designs criados na plataforma da trakto. Foi utilizado um design específico disponibilizado no Figma da Trakto para esse projeto. Abaixo estão os links utilizados para desenvolver esse desafio.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para criar sua conta na trakto:
+https://www.trakto.io
 
-## Build
+Protótipo do Figma:
+https://www.figma.com/file/Ajzapgkl4vrXw8KnHlIwPh/PrototipoTraktoTV
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Collection do Postman para referência da API:
+https://github.com/trakto/desafio_frontend/blob/main/DesafioTrakto.postman_collection.json
 
-## Running unit tests
+Api utilizada:
+https://api.trakto.io/
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+### Site
+![Demonstração do site desenvolvido](./src/assets/gif/trakto-app.gif)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+=================
+<!--ts-->
+   * [Tecnologias](#tecnologias)
+   * [Features](#features)
+   * [Instalação](#instalacao)
+   * [Desenvolvedora](#desenvolvedora)
+<!--te-->
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## ⚒️ Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [Trakto](https://www.trakto.io/)
+- [Node.js version 14.21.2](https://nodejs.org/en)
+- [Angular version 15.0.4.](https://angular.io/)
+- [Bootstrap version 5.2.3](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- [TypeScript version ~4.8.2](https://www.typescriptlang.org/)
+
+### Features
+
+- [x] Página de login
+- [x] Página inicial
+- [x] Material didático
+
+## Instalação
+
+Para rodar a aplicação localmente, será necessário instalar algumas tecnologias em seu computador. No caso, esse projeto foi desenvolvido no Windows 10. Basta seguir os passos a seguir:
+
+Instalar NodeJS:
+Acesse a página do NodeJS e faça o download do executável:
+https://nodejs.org/en/download/
+
+Instalar NPM:
+Insira o comando no promt: npm install -g npm
+Ou acesse a página do NPM para obter mais instruções se necessário:
+https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+
+Instalar nvm-windows:
+Se você utiliza várias versões do NodeJS na sua máquina, pode instalar o NVM-Windows para facilitar o gerenciamento das versões nos projetos em que você trabalha. Acesse os links para mais informações:
+
+Detalhes: https://github.com/coreybutler/nvm-windows
+
+Download: https://github.com/coreybutler/nvm-windows/releases
+
+Instalar Angular:
+Insira o comando no promt: npm install -g @angular/cli
+Ou acesse a página para do Angular para mais informações:
+https://angular.io/cli
+
+Em seguida, você pode verificar as versões instaladas em sua máquina com os respectivos comandos:
+NodeJS: node -v
+NPM: npm -v
+Angular: ng version
+NVM: nvm list (irá listar todas as versões instaladas e a versão utilizada)
+
+Agora, você poderá clonar/baixar o projeto em sua máquina:
+Utilize o comando: git clone https://github.com/SyAuler/trakto.git
+
+Em seguida, acesse a pasta em que o projeto foi salvo: cd D:\Front\trakto
+
+Para instalar as dependências, execute o comando: npm install
+
+Quando concluir a instalação, execute o comando: npm start ou ng serve
+O link do servidor local padrão será `http://localhost:4200/`. Caso queira utilizar outra porta, use o comando: ng serve --port=4300
+
+Se tudo ocorrer bem, o projeto estará pronto para navegação e utilização em sua máquina.
+
+Espero ter ajudado!
+
+## Desenvolvedora
+
+Feito por Simone Auler
+
+[![Linkedin Badge](https://img.shields.io/badge/-Simone-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/simone-auler/)](https://www.linkedin.com/in/simone-auler/)
