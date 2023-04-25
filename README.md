@@ -94,7 +94,7 @@ NVM: `nvm list` (irá listar todas as versões instaladas e a versão utilizada)
 
 ### Clonar Projeto
 Agora, você poderá clonar/baixar o projeto em sua máquina:
-Utilize o comando: git clone https://github.com/SyAuler/trakto.git
+Utilize o comando: `git clone https://github.com/SyAuler/trakto.git`
 
 Em seguida, acesse a pasta em que o projeto foi salvo: `cd D:\Front\trakto`
 
