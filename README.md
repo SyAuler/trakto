@@ -3,10 +3,12 @@
 
 ![Badge Concluído](http://img.shields.io/static/v1?label=STATUS&message=Concluído&color=GREEN&style=for-the-badge)
 
-https://github.com/trakto/desafio_frontend
 
 ## Descrição
 Participei do desafio para frontend proposto pela Trakto. Desenvolvi um site simples com página de login, uma página inicial para acessar os conteúdos e a uma página de material didático que lista os designs criados na plataforma da trakto. Foi utilizado um design específico disponibilizado no Figma da Trakto para esse projeto. Abaixo estão os links utilizados para desenvolver esse desafio.
+
+Link do desafio:
+https://github.com/trakto/desafio_frontend
 
 Para criar sua conta na trakto:
 https://www.trakto.io
