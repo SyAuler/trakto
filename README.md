@@ -54,18 +54,21 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [x] Material didático
 
 
-## Instalacao
+## Instalação
 
 Para rodar a aplicação localmente, será necessário instalar algumas tecnologias em seu computador. No caso, esse projeto foi desenvolvido no Windows 10. Basta seguir os passos a seguir:
+
 
 #### Instalar NodeJS:
 Acesse a página do NodeJS e faça o download do executável:
 https://nodejs.org/en/download/
 
+
 #### Instalar NPM:
 Insira o comando no promt: `npm install -g npm`
 Ou acesse a página do NPM para obter mais instruções se necessário:
 https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+
 
 #### Instalar nvm-windows:
 Se você utiliza várias versões do NodeJS na sua máquina, pode instalar o NVM-Windows para facilitar o gerenciamento das versões nos projetos em que você trabalha. Acesse os links para mais informações:
@@ -73,6 +76,7 @@ Se você utiliza várias versões do NodeJS na sua máquina, pode instalar o NVM
 Detalhes: https://github.com/coreybutler/nvm-windows
 
 Download: https://github.com/coreybutler/nvm-windows/releases
+
 
 #### Instalar Angular:
 Insira o comando no promt: `npm install -g @angular/cli`
@@ -85,6 +89,7 @@ NPM: `npm -v`
 Angular: `ng version`
 NVM: `nvm list` (irá listar todas as versões instaladas e a versão utilizada)
 
+
 ### Clonar Projeto
 Agora, você poderá clonar/baixar o projeto em sua máquina:
 Utilize o comando: git clone https://github.com/SyAuler/trakto.git
@@ -93,6 +98,7 @@ Em seguida, acesse a pasta em que o projeto foi salvo: `cd D:\Front\trakto`
 
 Para instalar as dependências, execute o comando: `npm install`
 
+
 ### Iniciar Projeto
 Quando concluir a instalação, execute o comando: `npm start` ou `ng serve`
 O link do servidor local padrão será `http://localhost:4200/`. Caso queira utilizar outra porta, use o comando: `ng serve --port=4300`
@@ -100,6 +106,7 @@ O link do servidor local padrão será `http://localhost:4200/`. Caso queira uti
 Se tudo ocorrer bem, o projeto estará pronto para navegação e utilização em sua máquina.
 
 Espero ter ajudado!
+
 
 ## Desenvolvedora
 
