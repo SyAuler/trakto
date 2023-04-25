@@ -23,7 +23,6 @@ export class LoginComponent implements OnInit {
     }
 
     initForm() {
-
         this.loginForm = this.fb.group({
             email: ['', Validators.required],
             password: ['', Validators.required],
@@ -41,12 +40,16 @@ export class LoginComponent implements OnInit {
                 this.loadingSubmit = false;
             },
             () => {
+                this.loadingSubmit = false;
                 this.email.setErrors({
                     required: true,
                 });
                 this.password.setErrors({
                     required: true,
                 });
+                this.loginForm.markAsUntouched();
+                this.email.setErrors(null);
+                this.password.setErrors(null);
                 this.errorMessage = 'Email ou senha incorreta. Tente novamente!';
             }
         );

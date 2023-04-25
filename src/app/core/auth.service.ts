@@ -26,7 +26,7 @@ export class AuthService {
                     this.isAuthenticated = true;
                     this.router.navigate(['/home']);
                     this.setToken(res.access_token)
-                    localStorage.setItem('token', JSON.stringify(res));
+                    localStorage.setItem('token', JSON.stringify(res.access_token));
                     return res;
                 }),
                 catchError((error) => {
@@ -38,6 +38,7 @@ export class AuthService {
 
     logout(): void {
         this.isAuthenticated = false;
+        localStorage.clear();
         this.router.navigateByUrl('/login');
     }
 
@@ -49,12 +50,8 @@ export class AuthService {
         return this.token;
     }
 
-    isLoggedIn(): boolean {
-        return !!this.token;
-    }
-
     getIsAuthenticated(): boolean {
-        return this.isAuthenticated;
+        return localStorage.getItem('token') !== null;
     }
 
 }

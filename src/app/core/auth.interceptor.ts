@@ -13,10 +13,11 @@ export class AuthInterceptor implements HttpInterceptor {
     ) { }
 
     intercept(request: HttpRequest<any>, next: HttpHandler) {
-        if (this.auth.isLoggedIn()) {
+        const token = JSON.parse(localStorage.getItem('token')!)
+        if (localStorage.getItem('token')) {
             request = request.clone({
                 setHeaders: {
-                    'Authorization': `Bearer ${this.auth.getToken()}`,
+                    'Authorization': `Bearer ${token}`,
                     'Content-Type': 'application/json',
                     'Accept': 'application/json',
                 }
