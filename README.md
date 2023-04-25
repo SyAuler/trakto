@@ -63,7 +63,7 @@ Acesse a página do NodeJS e faça o download do executável:
 https://nodejs.org/en/download/
 
 Instalar NPM:
-Insira o comando no promt:          npm install -g npm
+Insira o comando no promt: `npm install -g npm`
 Ou acesse a página do NPM para obter mais instruções se necessário:
 https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
@@ -75,25 +75,25 @@ Detalhes: https://github.com/coreybutler/nvm-windows
 Download: https://github.com/coreybutler/nvm-windows/releases
 
 Instalar Angular:
-Insira o comando no promt:          npm install -g @angular/cli
+Insira o comando no promt: `npm install -g @angular/cli`
 Ou acesse a página para do Angular para mais informações:
 https://angular.io/cli
 
 Em seguida, você pode verificar as versões instaladas em sua máquina com os respectivos comandos:
-NodeJS:         node -v
-NPM:        npm -v
-Angular:        ng version
-NVM:        nvm list (irá listar todas as versões instaladas e a versão utilizada)
+NodeJS: `node -v`
+NPM: `npm -v`
+Angular: `ng version`
+NVM: `nvm list` (irá listar todas as versões instaladas e a versão utilizada)
 
 Agora, você poderá clonar/baixar o projeto em sua máquina:
-Utilize o comando:          git clone https://github.com/SyAuler/trakto.git
+Utilize o comando: git clone https://github.com/SyAuler/trakto.git
 
-Em seguida, acesse a pasta em que o projeto foi salvo:          cd D:\Front\trakto
+Em seguida, acesse a pasta em que o projeto foi salvo: `cd D:\Front\trakto`
 
-Para instalar as dependências, execute o comando: npm install
+Para instalar as dependências, execute o comando: `npm install`
 
-Quando concluir a instalação, execute o comando:        npm start ou        ng serve
-O link do servidor local padrão será `http://localhost:4200/`. Caso queira utilizar outra porta, use o comando:         ng serve --port=4300
+Quando concluir a instalação, execute o comando: `npm start` ou `ng serve`
+O link do servidor local padrão será `http://localhost:4200/`. Caso queira utilizar outra porta, use o comando: `ng serve --port=4300`
 
 Se tudo ocorrer bem, o projeto estará pronto para navegação e utilização em sua máquina.
 
