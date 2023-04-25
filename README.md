@@ -1,12 +1,9 @@
 
 # Desafio Frontend Trakto
-https://github.com/trakto/desafio_frontend
 
 ![Badge Concluído](http://img.shields.io/static/v1?label=STATUS&message=Concluído&color=GREEN&style=for-the-badge)
 
-<p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=Concluído&color=GREEN&style=for-the-badge"/>
-</p>
+https://github.com/trakto/desafio_frontend
 
 ## Descrição
 Participei do desafio para frontend proposto pela Trakto. Desenvolvi um site simples com página de login, uma página inicial para acessar os conteúdos e a uma página de material didático que lista os designs criados na plataforma da trakto. Foi utilizado um design específico disponibilizado no Figma da Trakto para esse projeto. Abaixo estão os links utilizados para desenvolver esse desafio.
@@ -24,11 +21,11 @@ Api utilizada:
 https://api.trakto.io/
 
 
-### Site
+### Site Desenvolvido
 ![Demonstração do site desenvolvido](./src/assets/gif/trakto-app.gif)
 
 
-=================
+## Índice
 <!--ts-->
    * [Tecnologias](#tecnologias)
    * [Features](#features)
@@ -36,7 +33,7 @@ https://api.trakto.io/
    * [Desenvolvedora](#desenvolvedora)
 <!--te-->
 
-## ⚒️ Tecnologias
+## Tecnologias e Ferramentas
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -46,11 +43,16 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Bootstrap version 5.2.3](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - [TypeScript version ~4.8.2](https://www.typescriptlang.org/)
 
+- [VS Code](https://code.visualstudio.com/download)
+- [Figma](https://www.figma.com/downloads/)
+- [Postman](https://www.postman.com/downloads/)
+
 ### Features
 
 - [x] Página de login
 - [x] Página inicial
 - [x] Material didático
+
 
 ## Instalação
 
@@ -61,7 +63,7 @@ Acesse a página do NodeJS e faça o download do executável:
 https://nodejs.org/en/download/
 
 Instalar NPM:
-Insira o comando no promt: npm install -g npm
+Insira o comando no promt:          npm install -g npm
 Ou acesse a página do NPM para obter mais instruções se necessário:
 https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
@@ -73,25 +75,25 @@ Detalhes: https://github.com/coreybutler/nvm-windows
 Download: https://github.com/coreybutler/nvm-windows/releases
 
 Instalar Angular:
-Insira o comando no promt: npm install -g @angular/cli
+Insira o comando no promt:          npm install -g @angular/cli
 Ou acesse a página para do Angular para mais informações:
 https://angular.io/cli
 
 Em seguida, você pode verificar as versões instaladas em sua máquina com os respectivos comandos:
-NodeJS: node -v
-NPM: npm -v
-Angular: ng version
-NVM: nvm list (irá listar todas as versões instaladas e a versão utilizada)
+NodeJS:         node -v
+NPM:        npm -v
+Angular:        ng version
+NVM:        nvm list (irá listar todas as versões instaladas e a versão utilizada)
 
 Agora, você poderá clonar/baixar o projeto em sua máquina:
-Utilize o comando: git clone https://github.com/SyAuler/trakto.git
+Utilize o comando:          git clone https://github.com/SyAuler/trakto.git
 
-Em seguida, acesse a pasta em que o projeto foi salvo: cd D:\Front\trakto
+Em seguida, acesse a pasta em que o projeto foi salvo:          cd D:\Front\trakto
 
 Para instalar as dependências, execute o comando: npm install
 
-Quando concluir a instalação, execute o comando: npm start ou ng serve
-O link do servidor local padrão será `http://localhost:4200/`. Caso queira utilizar outra porta, use o comando: ng serve --port=4300
+Quando concluir a instalação, execute o comando:        npm start ou        ng serve
+O link do servidor local padrão será `http://localhost:4200/`. Caso queira utilizar outra porta, use o comando:         ng serve --port=4300
 
 Se tudo ocorrer bem, o projeto estará pronto para navegação e utilização em sua máquina.
 
