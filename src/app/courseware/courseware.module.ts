@@ -4,6 +4,7 @@ import { CoursewareRoutingModule } from './courseware-routing.module';
 import { CoursewareComponent } from './courseware.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -11,6 +12,7 @@ import { SharedModule } from '../shared/shared.module';
         CoursewareComponent,
     ],
     imports: [
+        HttpClientModule,
         CommonModule,
         RouterModule,
         CoursewareRoutingModule,
