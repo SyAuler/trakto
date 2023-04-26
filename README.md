@@ -107,6 +107,11 @@ O link do servidor local padrão será `http://localhost:4200/`. Caso queira uti
 
 Se tudo ocorrer bem, o projeto estará pronto para navegação e utilização em sua máquina.
 
+
+###Teste
+Para executar o teste, insira o comando `ng test` no prompt e quando terminar a compilação, abrirá o navegador chrome com o teste executado.
+
+
 Espero ter ajudado!
 
 
