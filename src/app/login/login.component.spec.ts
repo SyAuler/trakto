@@ -51,8 +51,8 @@ describe('LoginComponent', () => {
     });
 
     it('should return the current user', () => {
-        const email = 'simone';
-        const password = 'simone@example.com';
+        const email = 'simone@example.com';
+        const password = '123456';
 
         const result = service.login(email, password);
         expect(result).toBe(result);
